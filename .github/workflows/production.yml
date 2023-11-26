@@ -1,0 +1,39 @@
+name: release
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - master
+
+jobs:
+  if_merged:
+    name: release
+    if: github.event.pull_request.merged == true && github.head_ref == 'release'
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        cache: 'npm'
+    - name: install deps
+      run: npm ci
+    - name: lint
+      run: npm run lint
+
+    - name: build
+      run: npm run build
+    - name: export
+      run: npm run export
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.KMS_CLIENT_PRODUCTION_AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.KMS_CLIENT_PRODUCTION_AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
+    - name: Copy files to the s3 website content bucket
+      run:
+        aws s3 sync out s3://website-production-tbv

@@ -1,0 +1,17 @@
+{
+  "goTo": {
+    "tbv": "Go to Verizon",
+    "wfm": "Go to Walmart",
+    "gosmart": "Go to goSmart",
+    "net10": "Go to Net10",
+    "pageplus": "Go to Pageplus",
+    "simplemobile": "Go to Simple Mobile",
+    "straigthtalk": "Go to Straight Talk",
+    "tracfone": "Go to Tracfone",
+    "safelink": "Go to SafeLink"
+  },
+  "phoneHelp": "Phone Help",
+  "FAQ": "FAQ’s",
+  "brand": "Brand",
+  "zip": "Enter your ZIP"
+}

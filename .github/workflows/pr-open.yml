@@ -1,0 +1,18 @@
+name: PR branch deployment
+on:
+  [pull_request]
+
+jobs:
+  test:
+    name: test build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        cache: 'npm'
+    - name: install deps
+      run: npm ci
+    - name: lint
+      run: npm run lint

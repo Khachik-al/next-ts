@@ -1,0 +1,24 @@
+extends:
+  - next/core-web-vitals
+  - airbnb-typescript
+parserOptions:
+  project: "./tsconfig.json"
+rules:
+  react/react-in-jsx-scope: "off"
+  semi: [error, never]
+  "@typescript-eslint/semi": [error, never]
+  react/jsx-filename-extension: [1, extensions: [".ts", ".tsx"]]
+  react/function-component-definition:
+    - 1
+    - namedComponents: arrow-function
+      unnamedComponents: arrow-function
+  implicit-arrow-linebreak: "off"
+  import/extensions:
+    - error
+    - ignorePackages
+    - ts: never
+      tsx: never
+  jsx-quotes: [error, prefer-single]
+  react/no-unescaped-entities: 0
+  react/prop-types: 0
+  react/require-default-props: 0

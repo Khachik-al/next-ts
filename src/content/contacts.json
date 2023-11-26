@@ -1,0 +1,10 @@
+{
+  "email": {
+    "mailto": "email@address.co",
+    "body": "email body",
+    "subject": "subject"
+  },
+  "directCall": {
+    "number": "123-123-123"
+  }
+}

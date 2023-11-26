@@ -1,0 +1,17 @@
+{
+  "goTo": {
+    "tbv": "Ir a Verizon",
+    "wfm": "Ir a Walmart",
+    "gosmart": "Ir a goSmart",
+    "net10": "Ir a Net10",
+    "pageplus": "Ir a Pageplus",
+    "simplemobile": "Ir a Simple Mobile",
+    "straigthtalk": "Ir a Straight Talk",
+    "tracfone": "Ir a Tracfone",
+    "safelink": "Ir a SafeLink"
+  },
+  "phoneHelp": "Ayuda Telefónica",
+  "FAQ": "Preguntas frecuentes",
+  "brand": "Marca",
+  "zip": "Ingrese su codigo postal"
+}

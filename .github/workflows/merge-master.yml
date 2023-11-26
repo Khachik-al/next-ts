@@ -1,0 +1,33 @@
+name: dev test
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: dev deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        cache: 'npm'
+    - name: install deps
+      run: npm ci
+    - name: lint
+      run: npm run lint
+# Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.STAGING_HOST }}
+        username: ubuntu
+        key: ${{ secrets.STAGING_HOST_SSH_KEY }}
+        port: 22
+        script: |
+          cd /home/ubuntu/kms-client/
+          git pull
+          npm i
+          pm2 restart kmsClientDev
+    # https://adisarid.github.io/post/using-github-actions-to-update-a-shiny-app/

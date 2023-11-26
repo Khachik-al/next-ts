@@ -1,0 +1,47 @@
+{
+  "available": "Self-service tools available 24/7",
+  "connect": "Connect with us",
+  "shop": "Shop",
+  "customer": "Current Customers",
+  "about-retailer": {
+    "tbv": "About Total by Verizon",
+    "wfm": "About Family Mobile",
+    "gosmart": "About Go smart",
+    "net10": "About Net 10 wireless",
+    "pageplus": "About Pageplus",
+    "simplemobile": "About Simple Mobile",
+    "straigthtalk": "About Straight Talk",
+    "tracfone": "About Tracfone",
+    "safelink": "About SafeLink"
+  },
+  "balance": "Check your balance, refill or manage plans and phones with our ",
+  "spanned_number": "611611 text feature.",
+  "support": "Support",
+  "select_phone_model": "Select a Device Model",
+  "browse_knowledge_base": "Browse FAQs",
+  "support_faqs": "Support FAQs",
+  "contact_support": "Contact Support",
+  "needHelp": "Need Help Troubleshooting?",
+  "agree": {
+    "tbv": "",
+    "wfm": "",
+    "gosmart": "",
+    "net10": "",
+    "pageplus": "",
+    "simplemobile": "",
+    "straigthtalk": "By entering your email address and submitting this form, you agree to receive information, offers and promotions regarding Straight Talk products and services. You acknowledge being at least 13 years of age.",
+    "tracfone": "By entering your email address and submitting this form, you agree to receive information, offers and promotions regarding Tracfone products and services. You acknowledge being at least 13 years of age.",
+    "safelink": ""
+  },
+  "refer_conditions": {
+    "tbv": "",
+    "wfm": "",
+    "gosmart": "",
+    "net10": "",
+    "pageplus": "",
+    "simplemobile": "",
+    "straigthtalk": "*Refer to the latest Terms and Conditions of Service at straighttalk.com. At 2G Speeds, the functionality of some data applications, such as streaming audio or video may be affected. ∞Credit card and Account required for enrollment. A month equals 30 days. ∆By texting keywords to 611611, you are consenting to receive response messages. Message and data rates may apply. Please refer to our privacy policy. †4G LTE or 5G-capable device required. Actual availability, coverage and speed may vary. Reward Points can only be applied towards an eligible Straight Talk plan when you accumulate the total amount of points needed. Reward Points have no cash value and cannot be transferred to another customer. Additional terms and conditions apply. §The $10 Global Calling Card must be combined with another Straight Talk Service Plan. International long distance service is available to select destinations only, which are subject to change at any time. Calls must originate from the US, or Puerto Rico. No international roaming allowed. Only for personal use. Calls are billed in one-minute increments. Airtime minutes will be deducted plus the cost of the International call. Rates are subject to change without prior notice. Card benefit expires 180 days after last use or 30 days after your service is suspended, whichever occurs first. Available online only. **Each account is allowed to dial up to 15 unique international telephone numbers during a 30-day plan cycle, which resets each time a new plan is redeemed. Unlimited international calls are available to landline and mobile numbers in select destinations only, which are subject to change at any time. Calls must originate from the US or Puerto Rico. No international roaming allowed. Other terms and conditions apply. For personal use only. Please refer to the latest Terms and Conditions of Service at StraightTalk.com Straight Talk® is a registered trademark of TracFone Wireless, Inc. 2022. All rights reserved. All other trademarks, service marks, and trade names referenced in this site are the property of their respective owners.",
+    "tracfone": "",
+    "safelink": ""
+  }
+}

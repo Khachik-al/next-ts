@@ -1,0 +1,32 @@
+git:
+  tagName: v${version}
+  requireBranch: release
+  requireUpstream: false
+  commit: true
+  tag: true
+  push: true
+  pushArgs:
+    - "--force"
+github:
+  release: true
+plugins:
+  "@release-it/conventional-changelog":
+    infile: CHANGELOG.md
+    preset: conventionalcommits
+    types:
+      - type: feat
+        section: Features
+      - type: fix
+        section: Bug Fixes
+      - type: refactor
+        section: Other
+      - type: build
+        section: Other
+      - type: refactor
+        section: Other
+      - type: style
+        hidden: true
+      - type: chore
+        hidden: true
+npm:
+  publish: false
